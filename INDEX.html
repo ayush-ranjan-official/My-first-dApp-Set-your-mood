@@ -44,60 +44,6 @@
     type="application/javascript"
 ></script>
 <script>
-    /*window.ethereum.enable();
-    var provider = new ethers.providers.Web3Provider(
-        web3.currentProvider,
-        "Goerli"
-    );
-    var MoodContractAddress = "0xeaA0dB2E9acec366EF3BF27A118eC1830732bB55";
-    var MoodContractABI = [
-    {
-        "inputs": [],
-        "name": "getMood",
-        "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "string",
-                "name": "_mood",
-                "type": "string"
-            }
-        ],
-        "name": "setMood",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    }
-    ];
-    var MoodContract;
-    var signer;
-    provider.listAccount().then(function (account){
-        signer = provider.getSigner(account[0]);
-        MoodContract = new ethers.Contract(
-            MoodContractAddress,
-            MoodContractABI,
-            signer
-        );
-    });
-    async function getMood(){
-        getMoodPromise = MoodContract.getMood();
-        var Mood = await getMoodPromise;
-        console.log(Mood);
-    }
-    async function setMood(){
-        let mood = document.getElementById("mood").value;
-        setMoodPromise = MoodContract.setMood(mood);
-        await setMoodPromise;
-    }*/
     const MoodContractAddress = "0xeaA0dB2E9acec366EF3BF27A118eC1830732bB55";
     const MoodContractABI = [
 	{
